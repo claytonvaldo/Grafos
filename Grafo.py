@@ -1,9 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# ✅ Necessário para o matplotlib funcionar no Colab
-#%matplotlib inline
-
 class Grafo:
     def __init__(self, vertices, arestas, direcionado=True, ponderado=True):
         self.vertices = vertices
@@ -51,5 +48,4 @@ ponderado = True
 # Instancia e executa
 meuGrafo = Grafo(listaVertices, listaArestas, direcionado, ponderado)
 meuGrafo.exibirAdjacencia()
-meuGrafo.mostrarGraus()
 meuGrafo.desenhar()
